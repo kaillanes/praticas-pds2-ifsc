@@ -43,7 +43,7 @@ public class tela extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(250, 128, 114));
+		contentPane.setBackground(new Color(238, 232, 170));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
@@ -86,7 +86,7 @@ public class tela extends JFrame {
 		
 		JLabel lblNewLabel_2 = new JLabel("CADASTRO");
 		lblNewLabel_2.setFont(new Font("Sitka Subheading", Font.BOLD, 25));
-		lblNewLabel_2.setBounds(149, 10, 234, 40);
+		lblNewLabel_2.setBounds(159, 10, 234, 35);
 		contentPane.add(lblNewLabel_2);
 	}
 }

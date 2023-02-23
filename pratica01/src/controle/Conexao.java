@@ -29,7 +29,7 @@ public class Conexao {
 		}
 		return conexao;
 	}
-	public boolean fecharConexao() {
+	public  boolean fecharConexao() {
 		try
 		{
 		conexao.close();
