@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class Conexao {
 	private static Connection conexao;
 	private static Conexao instancia;
-	private static final String DATABASE = "leo";
+	private static final String DATABASE = "kaillane";
 	private static final String USER = "root";
 	private static final String PSW = "aluno";
 	
