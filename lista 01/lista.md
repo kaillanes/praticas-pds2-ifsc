@@ -22,7 +22,24 @@ RESPOSTA: Sequência de funções de um sistema que trabalha com banco de dados,
 5. Explique brevemente e com suas palavras qual a utilidade das três classes abaixo:
 Connection : Resposável por estabelecer a conexão com o banco de dados, bem como gerenciar essa conexão. Com essa classe é possivel executar consultas SQL e atualizações no banco de dados.
 
+RESPOSTA:  As três classes mencionadas são utilizadas para se comunicar com umbanco de dados em um programa Java.
 
-PreparedStatement
-Statement
+A classe Connection é responsável por estabelecer conexão com o banco de dados e gerenciar essa conexão. Ela permite que o programa se conecte a um banco de dados específico e execute operações nele.
 
+A classe PreparedStatement é utilizada para executar consultas SOL.
+Ela permite que defina parâmetros em uma consulta SQL e execute consulta com diferentes valores para esses parâmetros. Isso é útil para evitar ataques de injeção de SQL e para melhorar o desempenho. 
+
+A classe Statement é utilizada para executar consultas SQL simples. Ela permite que o programador execute
+uma consulta SOL diretamente no banco de dados sem a
+necessidade de definir parâmetros. No entanto, ela não é tão segura quanto a classe PreparedStatement, pois não oferece proteção contra ataques de injeção de SQL.
+
+6. Considere a execução de uma query SQL no banco de dados. Se esperamos um retorno de dados do banco de dados devemos usar a classe Statement ou PreparedStatement? Justifique. (Dica: é possível usar ambas; procure a diferença técnica entre as classes.).
+
+RESPOSTA: Seria PreparedStatement em vez da classe Statement. A classe PreparedStatement fornece um mecanismo mais seguro e eficiente para executar consultas SQL parametrizadas. Ela permite que os parâmetros da consulta sejam definidos dinamicamente, evitando a injeção de SQL, que é uma vulnerabilidade comum de segurança em aplicativos que usam consultas SQL dinâmicas.
+
+7. Com as suas próprias palavras, diferencie SWING do WINDOWBUILDER.
+
+RESPOSTA: SWING e WINDOWBUILDER são duas tecnologias usadas para criar interfaces gráficas de usuário em Java, mas há diferenças importantes entre elas.
+SWING é uma biblioteca de componentes nativa do Java que faz parte do conjunto de ferramentas Java Foundation Classes (JFC). Ele fornece um conjunto de classes para criar e gerenciar elementos de interface de usuário, como botões, caixas de texto, listas, menus e janelas. SWING é uma tecnologia de GUI programática, o que significa que o desenvolvedor escreve o código Java correspondente para criar e gerenciar os elementos de interface do usuário.
+WINDOWBUILDER é uma ferramenta de design de GUI visual para Java que utiliza a tecnologia SWING. Ele permite que os desenvolvedores criem interfaces gráficas de usuário arrastando e soltando componentes na tela, sem precisar escrever manualmente o código Java correspondente. O WINDOWBUILDER é uma tenologia de GUI visual, o que significa que o desenvolvedor pode criar a GUI visualmente sem precisar escrever o código Java correspondente.
+Resumindo, enquanto SWING é uma biblioteca de componentes GUI programática do Java, WINDOWBUILDER é uma ferramenta de design de GUI visual que utiliza a tecnologia SWING. O SWING fornece as classes e métodos para criar e gerenciar os elementos de interface de usuário.
